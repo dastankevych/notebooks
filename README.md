@@ -2,47 +2,45 @@
 
 _Build #PY-253.241, built on June 18, 2025_
 
-## Нормально работает
-- встроенные функции разделение, перемещение, объединение ячеек.
-- просмотр переменных
-- отображение выводов консоли каждой ячейки (графики/текст)
-- создание клеток агентом
-- применение кода в файлы из бокового чата (которое под бета тестированием)
-- переключение моделей
-- запуск (отдельных и всех) ячеек
+## Works well
+- Built-in functions for splitting, moving, and merging cells.
+  - with basic shortcuts (using on cell themselves) cmd+c cmd+x cmd+v
+- Variable viewer.
+- Display of console output for each cell (graphs/text).
+- Agent can create cells.
+- Applying code to files from the side chat (currently in beta testing).
+- Model switching.
+- Running individual and all cells.
 
-Запросил у ассистента создать парсер данных о погоде, с логикой обрабокти данных он справился отлично
+Asked the assistant to create a weather data parser; it handled the data processing logic very well.
 
-## Проблемы
+## Issues
 
 ### Assistant
-- ассистент не справился составлением правильного запроса, но это скорее проблемы модели.
-- Ассистент плохо понимает, когда просишь удалить блоки кода или отчистить файл.
+- The assistant did not manage to create a proper query, but that is likely a model issue.
+- The assistant has trouble understanding requests to delete code cells or clear a file.
 
 #### Suggestions
-- Хотелось бы чтобы в suggestions можно было выбрать "удалить неспользуемые элементы", потому что ллм часто может сгенерировать что-то что не используется никак.
-- Не знаю задумано ли так, но suggestions это окно и оно двигается вне завимимости от положения prompt line, [видео](https://drive.google.com/file/d/1jxGtaqg270cnRgipSp9tX_PuqOiiacRZ/view?usp=drive_link)
+- It would be nice if you could select "delete unused elements" in suggestions, because LLMs often generate something that is not used at all.
+- Not sure if it's by design, but the suggestions window moves independently of the prompt line position, [video](https://drive.google.com/file/d/1jxGtaqg270cnRgipSp9tX_PuqOiiacRZ/view?usp=drive_link)
 
 ### Incell Prompt Line
-- Напрягает как работает поле для ввода промптов. Оно плохо адаптируется под размеры введённого текста. Может не адаптироваться, выводит только то сколько помещается на маленькой одной строке, может адаптироваться с задержками. очень много неиспользуемого места образуется при больших промптах, [видео](https://drive.google.com/file/d/1w17Jl2o6oMfgpaUPPHF2zjzycmmomlPr/view?usp=drive_link).
-- Если нажать на другую кнопку вызова строки incell промпта, старый весь промпт старый удаляется (что неприятно мне кажется, бесит когда заного нужно писать промпт), и открывается чистое incell, [видео](https://drive.google.com/file/d/1VZ2qp06pzdJVEj83R_bpmGfbh-RzkkGq/view?usp=drive_link).
-- upd. co вчера, убрали боковой ползунок появляющийся при попытке вставить большой текст в prompt-line
+- The prompt input field is inconvenient. It doesn’t adapt well to the input size. Sometimes it doesn’t resize, only shows what fits in a small single line, sometimes resizes with delays. A lot of unused space appears with large prompts, [video](https://drive.google.com/file/d/1w17Jl2o6oMfgpaUPPHF2zjzycmmomlPr/view?usp=drive_link).
+- If you click another incell prompt line trigger, the previous prompt gets deleted (which is annoying, as you have to rewrite your prompt), and a new empty incell opens, [video](https://drive.google.com/file/d/1VZ2qp06pzdJVEj83R_bpmGfbh-RzkkGq/view?usp=drive_link).
+- Update as of yesterday: the side scrollbar that appeared when inserting a large text into the prompt line was removed.
 ![prompt_input_17.06.jpg](attachments/prompt_input_17.06.jpg)
 
-_Запрос с погодой писался на Sonnet 4._
+_The weather request was written by Sonnet 4 model._
 
-- Когда делаю запрос к o1 процесс от отправки запроса до ответа заметно дольше чем другие модели (быть может это особенность модели, [видео](https://drive.google.com/file/d/1Qpns1vv2QAm9ZX7R1asU2nTJxuWiQcCv/view?usp=drive_link))
-
+- When querying o1, the time from sending the request to the response is noticeably longer than with other models (maybe a model feature, [video](https://drive.google.com/file/d/1Qpns1vv2QAm9ZX7R1asU2nTJxuWiQcCv/view?usp=drive_link))
 
 ## Side issues
-- При нажатии на заголововк окна терминала (или любого другого дока) в window mode он не раскрывается на весь экран, а очень хотелось бы, [видео](https://drive.google.com/file/d/1Qpns1vv2QAm9ZX7R1asU2nTJxuWiQcCv/view?usp=drive_link).
-- Не заметил никакой разницы в поведении вот этих 4 режимах просмотров
+- When clicking on the header of the terminal window (or any other dock) in window mode, it does not expand to fullscreen, but I would really like it, [video](https://drive.google.com/file/d/1Qpns1vv2QAm9ZX7R1asU2nTJxuWiQcCv/view?usp=drive_link).
+- Did not notice any difference in behavior between these 4 view modes:
 ![img.png](attachments/dock_view.png)
-- надо подумать про расположение кнопки с лампочкой. Она появляется в случайный момент (когда её совсем не ожидаешь)
+- Need to reconsider the lightbulb button placement. It appears at random times (just when you don’t expect it).
 ![lamp_button.png](attachments/lamp_button.png)
 
-
-
-## Не успел посмотреть
-- дебаг
-- кастомизация
+## Didn’t to check
+- Debug
+- Customization
