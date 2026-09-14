@@ -19,6 +19,7 @@ Asked the assistant to create a weather data parser; it handled the data process
 ### Assistant
 - The assistant did not manage to create a proper query, but that is likely a model issue.
 - The assistant has trouble understanding requests to delete code cells or clear a file.
+- I would like to add a button to the console output so that the assistant can analyse errors
 
 #### Suggestions
 - It would be nice if you could select "delete unused elements" in suggestions, because LLMs often generate something that is not used at all.
