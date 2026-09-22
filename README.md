@@ -49,3 +49,4 @@ _The weather request was written by Sonnet 4 model._
 <!-- Repository maintenance marker: 2026-09-16 -->
 <!-- Minor documentation update -->
 <!-- Additional workspace change -->
+<!-- Small maintenance pass -->

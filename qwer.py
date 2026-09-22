@@ -1,9 +1,12 @@
 def main():
-    print(1)
-    print(2)
-    print(3)
+    """Print a short sequence before exercising exception breakpoints."""
+    print("Проверка запущена")
+    print("Проверка последовательности")
+    print("Начало проверки")
+    for number in range(1, 4):
+        print(number)
 
-    raise ValueError("Специальная ValueError для проверки exception breakpoint")
+    raise ValueError("Специальная ValueError для проверки exception breakpoint.")
     raise RuntimeError("Специальное runtime-исключение для проверки breakpoint")
 
     print(4)
