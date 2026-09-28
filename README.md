@@ -1,5 +1,10 @@
 # Notebooks
 
+## Quick check
+
+Run `python -m unittest` to verify the small notebook check helper. The helper
+uses the default label from `sample_config.py`, or accepts a custom label.
+
 _Build #PY-253.241, built on June 18, 2025_
 
 ## Works well
