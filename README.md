@@ -4,6 +4,7 @@
 
 Run `python -m unittest` to verify the small notebook check helper. The helper
 uses the default label from `sample_config.py`, or accepts a custom label.
+For a one-off status message, run `python -c "from quick_check import quick_check; print(quick_check())"`.
 
 _Build #PY-253.241, built on June 18, 2025_
 
